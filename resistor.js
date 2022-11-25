@@ -275,11 +275,4 @@ function getResistorOhms(bands) {
   return `Resistor value: ${formatNumber(getThreeBandValue(bands))} Ohms ${toleranceCodes[bands.tolerance]}`;
 }
 
-module.exports = {
-  getColorValue,
-  getMultiplierValue,
-  getThreeBandValue,
-  formatNumber,
-  getTolerance,
-  getResistorOhms,
-};
+export { getResistorOhms };
